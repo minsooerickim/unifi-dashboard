@@ -1,0 +1,17 @@
+{% extends 'style.html' %}
+
+{% block content %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="container_inline">
+    <h1><img src="/static/media/logo.d275ac59.png" alt="unifi_logo" style="width:128px;height:128px;border-radius:15px;"><h1>
+    
+    <a class="button" href="{% url "social:begin" "google-oauth2" %}?key={{ value }}" role="button">
+        <img width="20px" style="margin-bottom:0px; margin-right:5px;vertical-align: middle;" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />Continue with Google</a>
+        <p>Sign-in using your <b>@unifi.org</b> email</p>
+</div>
+{% endblock %}
+
+
+
+        
